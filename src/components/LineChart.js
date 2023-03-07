@@ -3,7 +3,7 @@ import { useTheme } from "@mui/material";
 import { tokens } from "../theme";
 // import { mockLineData as data } from "../data/mockData";
 
-const BarChart = ({ data, isDashboard = false }) => {
+const LineChart = ({ data, isDashboard = false }) => {
   // console.log(data, isDashboard);
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
@@ -115,4 +115,4 @@ const BarChart = ({ data, isDashboard = false }) => {
   );
 };
 
-export default BarChart;
+export default LineChart;
