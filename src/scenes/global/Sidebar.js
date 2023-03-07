@@ -57,6 +57,9 @@ const Sidebar = () => {
         "& .pro-inner-item:active": {
           color: "#8670fa !important",
         },
+        "& .pro-icon-wrapper": {
+          backgroundColor: `${colors.grey[900]} !important`,
+        },
       }}
     >
       <ProSidebar collapsed={isCollapsed}>
@@ -120,7 +123,16 @@ const Sidebar = () => {
             <Item
               title="Dashboard"
               to="/"
-              icon={<HomeOutlinedIcon />}
+              icon={
+                <HomeOutlinedIcon
+                  sx={
+                    {
+                      // color: colors.greenAccent[500],
+                      // backgroundColor: colors.primary[400],
+                    }
+                  }
+                />
+              }
               selected={selected}
               setSelected={setSelected}
             />
